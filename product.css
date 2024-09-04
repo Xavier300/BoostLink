@@ -1,0 +1,148 @@
+.product1, .product2, .product3 {
+    flex-direction: column; 
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(30.0% - 20px);
+    min-width: 250px;
+    box-sizing: border-box;
+}
+
+/* Product 1 listing styles */ 
+.product-list {
+    display: flex;
+    flex-wrap: wrap; gap: 20px;
+    justify-content: center;
+}
+.product1 {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(30.00% - 20px);
+    min-width: 250px;
+}
+.product1 img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.price {
+    color: #EE4D2D;
+    font-weight: bold;
+}
+
+
+/* Product 2 listing styles */ 
+.product-list {
+    display: flex;
+    flex-wrap: wrap; gap: 20px;
+}
+.product2 {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(30.0% - 20px);
+    min-width: 250px;
+}
+.product2 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.price {
+    color: #EE4D2D;
+    font-weight: bold;
+}
+
+
+/* Product 3 listing styles */ 
+.product-list {
+    display: flex;
+    flex-wrap: wrap; gap: 20px;
+}
+.product3 {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(30.0% - 20px);
+    min-width: 250px;
+}
+.product3 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.price {
+    color: #EE4D2D;
+    font-weight: bold;
+}
+
+aside {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; /* Allows absolute positioning within this container */
+}
+h4 {
+    position: absolute; /* Allows precise positioning within the aside */
+    top: 1px; /* Distance from the top */
+    left: 20px; /* Distance from the left */
+    margin: 0; /* Remove default margin */
+}
+
+section {
+    display: flex;
+    justify-content: space-between; /* Distributes space between articles */
+}
+/* Related product Main content styles */ 
+main {
+    padding: 20px;
+
+}
+/* Related product listing styles */ 
+.related-list {
+    display: flex;
+    flex-wrap: wrap; gap: 20px;
+}
+
+.related1 {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(20% - 20px);
+    min-width: 250px;
+}
+.related1 img {
+    max-width: 100%;
+    height: auto;
+}
+.price {
+    color: #EE4D2D;
+    font-weight: bold;
+}
+
+
+.related2 {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(20% - 20px);
+    min-width: 250px;
+}
+.related2 img {
+    max-width: 100%;
+    height: auto;
+}
+.price {
+    color: #EE4D2D;
+    font-weight: bold;
+}
