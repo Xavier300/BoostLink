@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png"images/logo.png">
+    <link href="order.css" rel="stylesheet">
+    <title>E-Commerce Order Form</title>
+</head>
+<body>
+    <form id="order-form">
+        <h1>Order Your Products</h1>
+        <section>
+            <h2>Customer Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="contact-no">Contact No:</label>
+            <input type="tel" id="contact-no" name="contact-no" required>
+            
+            <label for="shipping-address">Shipping Address:</label>
+            <textarea id="shipping-address" name="shipping-address" required></textarea> 
+        </section>
+        
+        <!-- Product Selection Section -->
+        <section>
+            <h2>Product Selection</h2>
+            <label for="product">Select a Product:</label> 
+            <select id="product" name="product" required>
+                <option value="" disabled selected hidden>Select a Product</option>
+                <option value="CPE710">TP-Link CPE710 5GHz AC 867Mbps 23dBi Outdoor CPE - ₱3,240</option>
+                <option value="CPE510">TP-Link CPE510 5GHz 300Mbps 13dBi Outdoor CPE - ₱2,290</option>
+                <option value="TL-ANT2424MD">TP-Link TL-ANT2424MD 2.4GHz 24dBi 2x2 MIMO Dish Antenna - ₱10,862</option>
+                <option value="TL-ANT2415MS">TP-Link TL-ANT2415MS 2.4GHz 15dBi 2x2 MIMO Sector Antenna - ₱9,400</option>
+                <option value="WBS210">TP-Link WBS210 2.4GHz 300Mbps Outdoor Wireless Base Station - ₱7,529</option>
+                <option value="TL-R480T+">TP-Link TL-R480T+ Load Balance Broadband Router - ₱3,462</option>
+                
+            <!-- Add more product options as needed --> 
+            </select>
+    
+            <label>Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required> 
+        </section>
+        
+        <!-- Payment Information Section -->
+        <section>
+            <h2>Payment Information</h2>
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" name="payment-method" required>
+                <option value="" disabled selected hidden>Select a Payment Method</option>
+                <option value="credit-card">Credit Card</option>
+                <option value="paypal">Paypal</option>
+                <option value="bank-transfer">Bank Transfer</option>
+            </select>
+            
+            <label for="credit-card-number">Credit Card Number:</label>
+            <input type="text" id="credit-card-number" name="credit-card-number" pattern="[0-9]{13,19}" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+            
+            <label for="expiration-date">Expiration Date:</label>
+            <input type="text" id="expiration-date" name="expiration-date" pattern="[0-9]{2}\/[0-9]{2}" placeholder="MM/YY" required>
+            
+            <label for="security-code">Security Code:</label>
+            <input type="text" id="security-code" name="security-code" pattern="[0-9]{3}" placeholder="XXX" required>
+        </section>
+        
+        <!-- Additional Options Section -->
+        <section>
+            <h2>Additional Options</h2>
+            <label for="coupon-code">Coupon Code:</label>
+            <input type="text" id="coupon-code" name="coupon-code" placeholder="Enter coupon code">
+            
+            <label for="gift-message">Gift Message:</label>
+            <textarea id="gift-message" name="gift-message" placeholder="Enter gift message"></textarea> 
+            
+            <label for="special-requests">Special Requests or Notes:</label>
+            <textarea id="special-requests" name="special-requests" placeholder="Enter special requests or notes"></textarea> 
+        </section>
+        
+        <!-- Order Summary Section -->
+        <section>
+            <h2>Order Summary</h2>
+            <!-- Display the selected products and total price here -->
+        <div id="order-summary">
+            <!-- Order summary content will be dynamically generated here --> 
+        </div>
+        </section>
+        
+        <!-- Submit Button -->
+        <button type="submit">Place Order</button>
+    </form>
+<script src="order.js"></script>
+</body>
+</html>
+
